@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#intro">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Introduction Section -->
+  <section id="intro" class="section intro">
+    <h1>Welcome to My Portfolio</h1>
+    <p>
+      Hi! I'm Sakshi goud, a web developer passionate about creating modern,
+      interactive, and responsive web applications.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <h2>Skills</h2>
+    <br>
+    <div class="skills-container">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">TypeScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Express.js</div>
+      <div class="skill">MongoDB</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="assets/images/dream decor.jpg" alt="Project 1" />
+        <h3>Dream Decore</h3>
+        <p>An Event decoration website.</p>
+        <button class="btn" onclick="window.location.href='https://github.com/sakshigoud/dream_decore'">
+          View Project
+        </button>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/project2.png" alt="Project 2" />
+        <h3>News app</h3>
+        <p>A today news website.</p>
+        <button class="btn" onclick="window.location.href='https://github.com/sakshigoud/NewsApp'">
+          View Project
+        </button>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/project1.png" alt="Project 2" />
+        <h3>Next Invest</h3>
+        <p>An investment website.</p>
+        <button class="btn"
+          onclick="window.location.href='http://investmentclient.s3-website.ap-south-1.amazonaws.com/'">
+          View Project
+        </button>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/netflix.jpg" alt="Project 2" />
+        <h3>Netflix</h3>
+        <p>A Netflix clone.</p>
+        <button class="btn" onclick="window.location.href='http://github.com/sakshigoud/netflix'">
+          View Project
+        </button>
+      </div>
+      <div class="project-card">
+        <img src="assets/images/food.jpg" alt="Project 2" />
+        <h3>Foodie</h3>
+        <p>A Food website.</p>
+        <button class="btn" onclick="window.location.href='http://github.com/sakshigoud/food-website'">
+          View Project
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <script src="dist/main.js"></script>
+</body>
+
+</html>
