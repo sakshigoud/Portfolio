@@ -1,4 +1,4 @@
-// Smooth Scroll Functionality
+
 const smoothScroll = () => {
     const links = document.querySelectorAll('.navbar a');
     links.forEach((link) => {
@@ -13,7 +13,7 @@ const smoothScroll = () => {
     });
 };
 
-// Form Validation
+
 const validateForm = (): boolean => {
     const name = document.getElementById('name') as HTMLInputElement;
     const email = document.getElementById('email') as HTMLInputElement;
@@ -24,7 +24,7 @@ const validateForm = (): boolean => {
         return false;
     }
 
-    // Simple email validation
+
     const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
     if (!emailPattern.test(email.value)) {
         alert('Please enter a valid email address!');
@@ -34,7 +34,7 @@ const validateForm = (): boolean => {
     return true;
 };
 
-// Form Submission Handling
+
 const handleFormSubmit = async (event: Event): Promise<void> => {
     event.preventDefault();
     if (validateForm()) {
@@ -50,7 +50,7 @@ const handleFormSubmit = async (event: Event): Promise<void> => {
 
 
         try {
-            // Send the form data to a placeholder API 
+
             const response = await fetch('http://localhost:5000/api/contact', {
                 method: 'POST',
                 headers: {
@@ -73,7 +73,6 @@ const handleFormSubmit = async (event: Event): Promise<void> => {
     }
 };
 
-// Initialization
 document.addEventListener('DOMContentLoaded', () => {
     smoothScroll();
 

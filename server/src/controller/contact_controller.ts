@@ -8,7 +8,8 @@ export function handleContactMe(req: Request, res: Response) {
     if (!name || !email || !message) {
         res.status(400).json({ error: 'All fields are required' });
     } else {
-        console.log('Contact Form Submitted:', { name, email, message });
+        const contactData = { name, email, message };
+        console.log('Contact Form Submitted:', contactData);
         res.status(200).json({ message: 'Form submitted successfully' });
     }
 
